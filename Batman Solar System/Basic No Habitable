@@ -1,1 +1,745 @@
+ssb_omega_system_initializer = {
+	name = "Omega"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+	planet = {
+		name = "Omega"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 36
+		has_ring = no
+	}
+
+	planet = {
+		name = "Amarita"
+		class = "pc_frozen"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Ataxia"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Aocitan"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Aqwart"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = yes
+		change_orbit = 5
+	}
+
+}
+
+#galactic system co ma ve všech jménen A na začátku lze použit jako výplń
+
+ssb_zeta_system_initializer = {
+	name = "Zeta"
+	class = "sc_m"
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+	planet = {
+		name = "Zeta"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 44
+		has_ring = no
+	}
+
+	planet = {
+		name = "Molto"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Loirer X"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Ozen"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		change_orbit = 5
+		has_ring = no
+		moon = {
+			name = "Mormor"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 18
+		}
+	}
+	planet = {
+		name = "Vixen"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = yes
+		change_orbit = 5
+	}
+
+}
+#obyčejný system planety pojmenovane nápady jen tak z fleku 
+ssb_morgol_system_initializer = {
+	name = "Morgol"
+	class = "sc_black_hole"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Morgol"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Mogul"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "Fogul"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Tzangul"
+		class = "pc_barren_cold"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Xorgul"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Foskul"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+#Výplńový systém nic víc
+ssb_fornar_system_initializer = {
+	name = "Fornar"
+	class = "sc_b"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Fornar"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		name = "Festus"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+	}
+	planet = {
+		name = "Abbadon"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		moon = {
+			name = "Soin"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		name = "Freiz"
+		class = "pc_frozen"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 34
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Ceilpan"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+
+}
+
+ssb_polaroid_system_initializer = {
+	name = "Polaroid"
+	class = "sc_pulsar"
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Polaroid"
+		class = "pc_pulsar"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 38
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = yes
+		change_orbit = 5
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+ssb_pokarma_system_initializer = {
+	name = "Pokarma"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Pokarma"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 42
+		has_ring = no
+	}
+
+	planet = {
+		name = "Orimistar"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		name = "Eriadun"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+	}
+	planet = {
+		name = "Nullius"
+		class = "pc_frozen"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Zakormar"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+	}
+	planet = {
+		name = "Rekzar V"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+
+}
+
+ssb_gosmir_system_initializer = {
+	name = "Gosmir"
+	class = "sc_t_star"
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Gosmir"
+		class = "pc_t_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 37
+		has_ring = no
+	}
+
+	planet = {
+		name = "Poxar"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Prikkir"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Bosport"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 5
+		has_ring = no
+		moon = {
+			name = "Fulgrim"
+			class = "pc_toxic"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 5
+		}
+	}
+	planet = {
+		name = "Gargarm"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 40
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+
+}
+
+ssb_nero_system_initializer = {
+	name = "Nero"
+	class = "sc_neutron_star"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Nero"
+		class = "pc_neutron_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 39
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+	}
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		moon = {
+			name = "Dante"
+			class = "pc_barren_cold"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+		}
+	}
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+		moon = {
+			name = "Vergil"
+			class = "pc_toxic"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+		}
+	}
+
+}
+
+ssb_sovereign_system_initializer = {
+	name = "Sovereign"
+	class = "sc_black_hole"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Sovereign"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 45
+		has_ring = no
+	}
+
+	planet = {
+		name = "Ripper"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+		moon = {
+			name = "Wipper"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 5
+		}
+		moon = {
+			name = "Quitter"
+			class = "pc_barren"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+		}
+	}
+	planet = {
+		name = "Jikker"
+		class = "pc_barren_cold"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+		moon = {
+			name = "Polpel"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 4
+		}
+		moon = {
+			name = "Jarvan"
+			class = "pc_barren"
+			orbit_distance = 6
+			orbit_angle = { min = 90 max = 270 }
+			size = 3
+		}
+	}
+
+}
+
+ssb_gimli_system_initializer = {
+	name = "Gimli"
+	class = "sc_f"
+    usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Gimli"
+		class = "pc_f_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Misty"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Ironer"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+	}
+	planet = {
+		name = "Moria"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = yes
+		change_orbit = 5
+		moon = {
+			name = "Irondoor"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 8
+		}
+	}
+	planet = {
+		name = "Angbad"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+
+}
