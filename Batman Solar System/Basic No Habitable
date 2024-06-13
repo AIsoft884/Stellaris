@@ -743,3 +743,808 @@ ssb_gimli_system_initializer = {
 	}
 
 }
+ssb_gamet_system_initializer = {
+	name = "Gamet"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Gamet"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 39
+		has_ring = no
+	}
+
+	planet = {
+		name = "Notemen"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Byrma"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Pobalt"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Holmium"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Vulcanite"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+	}
+
+}
+#checkni names dvou asteroidu beatiful reference na factorio :)
+
+ssb_gamet_system_initializer = {
+	name = "Gamet"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+usage = misc_system_init
+
+	usage_odds = {
+		base = 2000000
+	modifier = {
+		factor = 0
+		is_bottleneck_system = yes
+		}
+	}
+	max_instances = 1
+
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+	planet = {
+		name = "Gamet"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 39
+		has_ring = no
+	}
+
+	planet = {
+		name = "Notemen"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Byrma"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Pobalt"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Holmium"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Vulcanite"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+	}
+
+}
+#checkni names dvou asteroidu beatiful reference na factorio :)
+ssb_ogden_system_initializer = {
+	name = "Ogden"
+	class = "sc_a"
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Ogden"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		name = "Formar"
+		class = "pc_frozen"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		name = "Waterloo"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+		moon = {
+			name = "Virult"
+			class = "pc_barren"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 5
+		}
+	}
+	planet = {
+		name = "Verdun"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 26
+		has_ring = no
+		moon = {
+			name = "Vados"
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 10
+		}
+	}
+
+}
+ssb_boreus_system_initializer = {
+	name = "Boreus"
+	class = "sc_m"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Boreus"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 33
+		has_ring = no
+	}
+
+	planet = {
+		name = "Bombar"
+		class = "pc_molten"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Returnal"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "Molalmar"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+	}
+	planet = {
+		name = "Uzivov"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
+#All planets molten typ takze obycejny neobycejny system
+ssb_tamaran_system_initializer = {
+	name = "Tamaran"
+	class = "sc_k"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Tamaran"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 37
+		has_ring = no
+	}
+
+	planet = {
+		name = "Malhorn"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+	planet = {
+		name = "Malthesers"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+	}
+	planet = {
+		name = "Tikkitakka"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+	}
+	planet = {
+		name = "Shellorn"
+		class = "pc_gas_giant"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 29
+		change_orbit = 5
+		has_ring = no
+	}
+	planet = {
+		name = "Mallorn"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+
+}
+#name star z DC universe souvislost Starfire.
+ssb_korriban_system_initializer = {
+	name = "Korriban"
+	class = "sc_f"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Korriban"
+		class = "pc_f_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 45
+		has_ring = no
+	}
+
+	planet = {
+		name = "Korrma"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		name = "Arrakis"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Alderaan"
+		class = "pc_barren"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+	planet = {
+		name = "Wortex"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 33
+		change_orbit = 5
+		has_ring = no
+		moon = {
+			name = "Fortex"
+			class = "pc_molten"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 9
+		}
+	}
+
+}
+#maly reference na Dunu.
+ssb_rusty_system_initializer = {
+	name = "Rusty"
+	class = "sc_t_star"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Rusty"
+		class = "pc_t_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 37
+		has_ring = no
+	}
+
+	planet = {
+		name = "Tronmax"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "Qotram"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+	}
+	planet = {
+		name = "Namib"
+		class = "pc_barren"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Wandar"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+	}
+	planet = {
+		name = "Xandar"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+
+}
+
+ssb_zumra_system_initializer = {
+	name = "Zumra"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Zumra"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Zebra"
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Zarma"
+		class = "pc_molten"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Zubra"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+	}
+	planet = {
+		name = "Zabrak"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = no
+	}
+
+}
+ssb_callidus_system_initializer = {
+	name = "Callidus"
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Callidus"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Nauvis"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Naquium"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		name = "Cryonite"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Berrylium"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Iridium"
+		class = "pc_barren"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Vulcanite"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+
+}
+#Scooter TADY JE FACTORIO SYSTEM PRE TEBA!
+ssb_zikkurat_system_initializer = {
+	name = "Zikkurat"
+	class = "sc_black_hole"
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+	planet = {
+		name = "Zikkurat"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Arthas"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Warcraf"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Kelthusad"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Djaine"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		name = "Shadoland"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+
+}
+ssb_erdtree_system_initializer = {
+	name = "Erdtree"
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 150
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Erdtree"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Blaidd"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Ranni"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Miquella"
+		class = "pc_barren"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Malenia"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = no
+	}
+	planet = {
+		name = "Radahn"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+
+}
