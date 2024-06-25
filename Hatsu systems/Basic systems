@@ -1,1 +1,120 @@
+ssb_poinia_system_initializer = {
+	name = "Poinia"
+	class = "sc_binary_4"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Poinia"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "I1"
+		class = "pc_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I2"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I3"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I4"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "Onvetera"
+		class = "pc_toxic"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Nuvotania"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Chokitera"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Saveliv"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		moon = {
+			name = "Yumainerth"
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 12
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+
+}
 
