@@ -61,3 +61,897 @@ ssb_cohatera_system_initializer = {
 
 }
 
+ssb_azriun_system_initializer = {
+	name = "Azriun"
+	class = "sc_f"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 180
+	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
+
+	planet = {
+		name = "Azriun"
+		class = "pc_f_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+	}
+
+	planet = {
+		name = "Flian"
+		class = "pc_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "Hurt"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+	}
+	planet = {
+		name = "Slian"
+		class = "pc_toxic"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Mot"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		change_orbit = 5
+		has_ring = no
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Ria"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+		modifiers = none
+	}
+
+}
+
+
+
+ssb_novis_system_initializer = {
+	name = "Novis"
+	class = "sc_binary_2"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Novis"
+		class = "pc_neutron_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		name = "Huat"
+		class = "pc_arid"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 8
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Grus"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 26
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Asr"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "CBW"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+
+}
+
+
+ssb_horia_system_initializer = {
+	name = "Horia"
+	class = "sc_binary_6"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Horia"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 12
+		has_ring = no
+	}
+
+	planet = {
+		name = "Yall"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Yallear"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Yallia"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Y"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Yuack"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+
+
+ssb_valhalla_system_initializer = {
+	name = "Valhalla"
+	class = "sc_a"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Valhalla"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 20
+		has_ring = no
+	}
+
+	planet = {
+		name = "V2"
+		class = "pc_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = no
+	}
+	planet = {
+		name = "V5"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 8
+		has_ring = no
+	}
+	planet = {
+		name = "Yotunhaim"
+		class = "pc_tundra"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Yot"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Valh"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Hela"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+
+}
+
+
+
+ssb_poinia_system_initializer = {
+	name = "Poinia"
+	class = "sc_binary_4"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 215
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Poinia"
+		class = "pc_k_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 10
+		has_ring = no
+	}
+
+	planet = {
+		name = "I1"
+		class = "pc_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I2"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I3"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "I4"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = no
+	}
+	planet = {
+		name = "Onvetera"
+		class = "pc_toxic"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Nuvotania"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Chokitera"
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 24
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Saveliv"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		moon = {
+			name = "Yumainerth"
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 12
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+
+}
+
+
+
+ssb_zater_system_initializer = {
+	name = "Zater"
+	class = "sc_trinary_3"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Zater"
+		class = "pc_f_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 22
+		has_ring = no
+	}
+
+	planet = {
+		name = "Zesethea"
+		class = "pc_barren_cold"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Thieturn"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Agnorth"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			name = "Sigao"
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 8
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		name = "Ioter"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Kobroivis"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+
+
+ssb_bevore_system_initializer = {
+	name = "Bevore"
+	class = "sc_binary_1"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Bevore"
+		class = "pc_pulsar"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 12
+		has_ring = no
+	}
+
+	planet = {
+		name = "Accibos"
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		moon = {
+			name = "Lp7"
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 7
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		name = "Neiruta"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Thuter"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 17
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Veseron"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 19
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Dyu7"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 9
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+
+ssb_ebore_system_initializer = {
+	name = "Ebore"
+	class = "sc_b"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Ebore"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Seuyama"
+		class = "pc_gas_giant"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Xo-1"
+		class = "pc_asteroid"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Cisacarro"
+		class = "pc_nuked"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			name = "Lo-2"
+			class = "pc_asteroid"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 8
+			tile_blockers = none
+			modifiers = none
+		}
+	}
+
+}
+
+
+
+ssb_xopra_system_initializer = {
+	name = "Xopra"
+	class = "sc_black_hole"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 145
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Xopra"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		name = "Lanuathea"
+		class = "pc_asteroid"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 7
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Kibburn"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+
+
+ssb_cesuna_system_initializer = {
+	name = "Cesuna"
+	class = "sc_m"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Cesuna"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 25
+		has_ring = no
+	}
+
+	planet = {
+		name = "Yala"
+		class = "pc_asteroid"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		moon = {
+			name = "Yla"
+			class = "pc_frozen"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 6
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		name = "Chon"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Nkor"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Rafor"
+		class = "pc_barren"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
+
+
