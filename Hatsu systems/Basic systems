@@ -1,3 +1,128 @@
+ssb_convulara_system_initializer = {
+	name = "Convulara"
+	class = "sc_neutron_star"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 285
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Convulara"
+		class = "pc_neutron_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 33
+		has_ring = no
+	}
+
+	planet = {
+		name = "BB"
+		class = "pc_asteroid"
+		orbit_distance = 60
+		orbit_angle = { min = 90 max = 270 }
+		size = 2
+		has_ring = no
+	}
+	planet = {
+		name = "Bv"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+	}
+	planet = {
+		name = "Bn"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		has_ring = no
+	}
+	planet = {
+		name = "Bn1"
+		class = "pc_asteroid"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Bg"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Gs"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Fto"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Druo"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 23
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Dup"
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 8
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
 ssb_theanov_system_initializer = {
 	name = "Theanov"
 	class = "sc_m"
