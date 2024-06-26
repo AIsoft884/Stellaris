@@ -5,16 +5,20 @@ ssb_hugrerth_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Hugrerth"
@@ -105,17 +109,20 @@ ssb_hugrerth_system_initializer = {
 ssb_sustrabos_system_initializer = {
 	name = "Sustrabos"
 	class = "sc_black_hole"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Sustrabos"
 		class = "pc_black_hole"
@@ -151,17 +158,20 @@ ssb_sustrabos_system_initializer = {
 ssb_yovion_system_initializer = {
 	name = "Yovion"
 	class = "sc_m"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Yovion"
 		class = "pc_m_star"
@@ -209,7 +219,7 @@ ssb_yovion_system_initializer = {
 ssb_boerus_system_initializer = {
 	name = "Boerus"
 	class = "sc_m"
-	usage = custom_empire
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -279,7 +289,7 @@ ssb_onia_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 150
 	}
-	usage = custom_empire
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -348,7 +358,7 @@ ssb_convulara_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 285
 	}
-	usage = custom_empire
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -469,16 +479,20 @@ ssb_convulara_system_initializer = {
 ssb_theanov_system_initializer = {
 	name = "Theanov"
 	class = "sc_m"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Theanov"
@@ -532,16 +546,20 @@ ssb_mopra_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Mopra"
@@ -605,16 +623,20 @@ ssb_mopra_system_initializer = {
 ssb_vorilia_system_initializer = {
 	name = "Vorilia"
 	class = "sc_pulsar"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Vorilia"
@@ -684,16 +706,20 @@ ssb_pheonides_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 180
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Pheonides"
@@ -755,16 +781,20 @@ ssb_pheonides_system_initializer = {
 ssb_diahiri_system_initializer = {
 	name = "Diahiri"
 	class = "sc_g"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Diahiri"
@@ -814,16 +844,20 @@ ssb_diahiri_system_initializer = {
 ssb_rialiv_system_initializer = {
 	name = "Rialiv"
 	class = "sc_t_star"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Rialiv"
@@ -881,17 +915,20 @@ ssb_rialiv_system_initializer = {
 ssb_iduna_system_initializer = {
 	name = "Iduna"
 	class = "sc_a"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Iduna"
 		class = "pc_a_star"
@@ -946,16 +983,20 @@ ssb_iduna_system_initializer = {
 ssb_ubbomia_system_initializer = {
 	name = "Ubbomia"
 	class = "sc_b"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Ubbomia"
@@ -1013,16 +1054,20 @@ ssb_asihiri_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Asihiri"
@@ -1111,16 +1156,20 @@ ssb_tentit_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 220
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "TenTiT"
@@ -1196,16 +1245,20 @@ ssb_tentit_system_initializer = {
 ssb_maiden_system_initializer = {
 	name = "Maiden"
 	class = "sc_f"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Maiden"
@@ -1274,17 +1327,20 @@ ssb_maiden_system_initializer = {
 ssb_negro_system_initializer = {
 	name = "Negro"
 	class = "sc_black_hole"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Negro"
 		class = "pc_black_hole"
@@ -1299,17 +1355,20 @@ ssb_negro_system_initializer = {
 ssb_cohatera_system_initializer = {
 	name = "Cohatera"
 	class = "sc_trinary_4"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 	planet = {
 		name = "Cohatera"
 		class = "pc_k_star"
@@ -1452,7 +1511,7 @@ ssb_novis_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -1523,7 +1582,7 @@ ssb_novis_system_initializer = {
 ssb_horia_system_initializer = {
 	name = "Horia"
 	class = "sc_binary_6"
-	usage = custom_empire
+	
 	init_effect = {
 		every_neighbor_system = {
 			set_star_flag = empire_cluster
@@ -1615,16 +1674,20 @@ ssb_valhalla_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Valhalla"
@@ -1708,16 +1771,20 @@ ssb_poinia_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Poinia"
@@ -1826,16 +1893,20 @@ ssb_poinia_system_initializer = {
 ssb_zater_system_initializer = {
 	name = "Zater"
 	class = "sc_trinary_3"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Zater"
@@ -1927,16 +1998,20 @@ ssb_zater_system_initializer = {
 ssb_bevore_system_initializer = {
 	name = "Bevore"
 	class = "sc_binary_1"
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Bevore"
@@ -2032,16 +2107,20 @@ ssb_ebore_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Ebore"
@@ -2111,16 +2190,20 @@ ssb_xopra_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 145
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Xopra"
@@ -2169,16 +2252,20 @@ ssb_cesuna_system_initializer = {
 		type = rocky_asteroid_belt
 		radius = 185
 	}
-	usage = custom_empire
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+    init_effect = {
+        generate_home_system_resources = yes
+    }
 
 	planet = {
 		name = "Cesuna"
