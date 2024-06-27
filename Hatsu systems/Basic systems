@@ -16,9 +16,7 @@ ssb_hugrerth_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
+
 
 	planet = {
 		name = "Hugrerth"
@@ -120,9 +118,7 @@ ssb_sustrabos_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
+   
 	planet = {
 		name = "Sustrabos"
 		class = "pc_black_hole"
@@ -169,9 +165,7 @@ ssb_yovion_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
+    
 	planet = {
 		name = "Yovion"
 		class = "pc_m_star"
@@ -220,16 +214,19 @@ ssb_boerus_system_initializer = {
 	name = "Boerus"
 	class = "sc_m"
 	
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
+
+
+		
 	planet = {
 		name = "Boerus"
 		class = "pc_m_star"
@@ -290,15 +287,16 @@ ssb_onia_system_initializer = {
 		radius = 150
 	}
 	
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
 
 	planet = {
 		name = "Onia"
@@ -359,15 +357,16 @@ ssb_convulara_system_initializer = {
 		radius = 285
 	}
 	
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
 
 	planet = {
 		name = "Convulara"
@@ -490,10 +489,7 @@ ssb_theanov_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
+    
 	planet = {
 		name = "Theanov"
 		class = "pc_m_star"
@@ -556,10 +552,6 @@ ssb_mopra_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Mopra"
@@ -633,10 +625,6 @@ ssb_vorilia_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Vorilia"
@@ -717,10 +705,6 @@ ssb_pheonides_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "Pheonides"
 		class = "pc_k_star"
@@ -792,10 +776,6 @@ ssb_diahiri_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "Diahiri"
 		class = "pc_g_star"
@@ -854,10 +834,6 @@ ssb_rialiv_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Rialiv"
@@ -926,9 +902,6 @@ ssb_iduna_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 	planet = {
 		name = "Iduna"
 		class = "pc_a_star"
@@ -994,9 +967,6 @@ ssb_ubbomia_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Ubbomia"
@@ -1064,10 +1034,6 @@ ssb_asihiri_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Asihiri"
@@ -1167,10 +1133,6 @@ ssb_tentit_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "TenTiT"
 		class = "pc_t_star"
@@ -1256,10 +1218,6 @@ usage = misc_system_init
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "Maiden"
 		class = "pc_f_star"
@@ -1338,9 +1296,6 @@ ssb_negro_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 	planet = {
 		name = "Negro"
 		class = "pc_black_hole"
@@ -1366,9 +1321,6 @@ ssb_cohatera_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 	planet = {
 		name = "Cohatera"
 		class = "pc_k_star"
@@ -1435,10 +1387,6 @@ ssb_azriun_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Azriun"
@@ -1512,17 +1460,16 @@ ssb_novis_system_initializer = {
 		radius = 215
 	}
 	
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+	usage = misc_system_init
 
-	planet = {
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    
+        planet = {
 		name = "Novis"
 		class = "pc_neutron_star"
 		orbit_distance = 0
@@ -1583,15 +1530,16 @@ ssb_horia_system_initializer = {
 	name = "Horia"
 	class = "sc_binary_6"
 	
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-		generate_home_system_resources = yes
-	}
+usage = misc_system_init
+
+    usage_odds = {
+        base = 2000000
+    modifier = {
+        factor = 0
+        is_bottleneck_system = yes
+        }
+    }
+    max_instances = 1
 
 	planet = {
 		name = "Horia"
@@ -1685,11 +1633,7 @@ ssb_valhalla_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
-	planet = {
+   	planet = {
 		name = "Valhalla"
 		class = "pc_b_star"
 		orbit_distance = 0
@@ -1782,9 +1726,6 @@ ssb_poinia_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Poinia"
@@ -1904,11 +1845,7 @@ ssb_zater_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
-	planet = {
+   	planet = {
 		name = "Zater"
 		class = "pc_f_star"
 		orbit_distance = 0
@@ -2008,10 +1945,6 @@ ssb_bevore_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Bevore"
@@ -2118,10 +2051,6 @@ ssb_ebore_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "Ebore"
 		class = "pc_b_star"
@@ -2201,10 +2130,6 @@ ssb_xopra_system_initializer = {
     }
     max_instances = 1
 
-    init_effect = {
-        generate_home_system_resources = yes
-    }
-
 	planet = {
 		name = "Xopra"
 		class = "pc_black_hole"
@@ -2262,10 +2187,6 @@ ssb_cesuna_system_initializer = {
         }
     }
     max_instances = 1
-
-    init_effect = {
-        generate_home_system_resources = yes
-    }
 
 	planet = {
 		name = "Cesuna"
@@ -2338,6 +2259,3 @@ ssb_cesuna_system_initializer = {
 	}
 
 }
-
-
-test test 
