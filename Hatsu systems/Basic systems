@@ -1,3 +1,102 @@
+ssb_dilrars_system_initializer = {
+	name = "Dilrars"
+	class = "sc_a"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Dilrars"
+		class = "pc_a_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 26
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_arid"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 4
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 8
+			tile_blockers = none
+			modifiers = none
+			init_effect = {
+				prevent_anomaly = yes
+			}
+		}
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 10
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 12
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
 ssb_chulrinda_system_initializer = {
 	name = "Chulrinda"
 	class = "sc_f"
