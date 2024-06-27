@@ -1,0 +1,78 @@
+##### Special Dismantle Situation
+
+dismantle_gate = {
+	length = 1800
+	icon = "GFX_edict_type_time"
+
+	potential = {
+		is_ai = no
+	}
+
+	allow = {
+		owner = {
+			any_owned_megastructure = {
+				is_megastructure_type = scooter_gate_active_one
+			}
+		}
+	}
+
+	effect = {
+		every_country = {
+			start_situation = {
+				type = gate_one_dismantle_situation
+			}
+		}
+	}
+}
+
+dismantle_cancel = {
+	length = 1
+	icon = "GFX_edict_type_time"
+
+	potential = {
+		is_ai = no
+	}
+
+	allow = {
+		owner = {
+			any_owned_megastructure = {
+				OR = {
+					is_megastructure_type = scooter_gate_active_one
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_two
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_three
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_four
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_five
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_six
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_seven
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_eight
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_nine
+				}
+				OR = {
+					is_megastructure_type = scooter_gate_active_ten
+				}
+			}
+		}
+	}
+
+	effect = {
+		country_event = {
+			id = gate_dismantle.4
+		}
+	}
+}

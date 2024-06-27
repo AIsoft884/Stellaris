@@ -1,0 +1,35 @@
+on_game_start = {
+	events = {
+		gate_events.0
+		gate_events.2
+	}
+}
+#on_monthly_pulse_country = {
+#	events = {
+#		megasit.01	# check for upgradeable megastructures and start situations if needed
+#	}
+#}
+#
+#on_game_start_country = {
+#	events = {
+#		gate_events.1
+#	}
+#}
+
+#on_entering_system_first_time = {
+#	events = {
+#		gate_events.1
+#	}
+#}
+
+on_system_occupied = {
+	events = {
+		gate_owner.1
+	}
+}
+
+on_planet_defenders_lose = {
+	events = {
+		gate_owner.1
+	}
+}

@@ -1,0 +1,33 @@
+gate_category = {
+	desc = "gate_terminal"
+	picture = "GFX_evt_city_ruins"
+	level = 10
+
+	spawn_chance = {
+		modifier = {
+			add = 20000
+			has_planet_flag = gate_planet_one
+		}
+	}
+
+	on_success = {
+		1 = gate_events.1
+	}
+}
+
+hyper_connect_category = {
+	desc = "hyperline_construction"
+	picture = "GFX_evt_federation_fleet"
+	level = 10
+
+	spawn_chance = {
+		modifier = {
+			add = 20000
+			has_planet_flag = gate_planet_two
+		}
+	}
+
+	on_success = {
+		1 = gate_events.3
+	}
+}

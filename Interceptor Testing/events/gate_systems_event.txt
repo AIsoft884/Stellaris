@@ -1,0 +1,132 @@
+namespace = gate_events
+
+event = {
+    id = gate_events.0
+    is_triggered_only = yes
+    trigger = {
+        always = yes
+    }
+    immediate = {
+        spawn_system = {
+            initializer = ssb_gateway_one_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_two_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_three_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_four_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_five_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_six_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_seven_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_eight_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_nine_system_initializer
+        }
+        spawn_system = {
+            initializer = ssb_gateway_ten_system_initializer
+        }
+    }
+}
+
+ship_event = {
+    id = gate_events.1
+    is_triggered_only = yes
+    title = "gate_event.1.title"
+    desc = "gate_event.1.desc"
+    picture = "GFX_evt_astral_rift_desert_ruins_third_chamber"
+
+    fire_only_once = yes
+
+    immediate = {
+        every_country = {
+            start_situation = {
+                type = interceptor_situaton
+            }
+        }
+    }
+
+    option = {
+        name = gate_event.1.option
+    }
+}
+
+event = {
+    id = gate_events.2
+    is_triggered_only = yes
+
+    trigger = {
+        always = yes
+    }
+
+    fire_only_once = yes
+
+    immediate = {
+        no_scope = {
+            random_system = {
+                limit = {
+                    NOR = {
+                        is_fe_cluster = no
+                        has_star_flag = system_gate_two
+                    }
+                }
+            }
+            if = {
+                limit = { exists = event_target:sealed_gate_two }
+                event_target:sealed_gate_two = {
+                    isolate_system = yes
+                }
+            }
+        }
+    }
+}
+
+ship_event = {
+    id = gate_events.3
+    is_triggered_only = yes
+    title = "gate_event.3.title"
+    desc = "gate_event.3.desc"
+    picture = "GFX_evt_astral_rift_desert_ruins_third_chamber"
+
+    fire_only_once = yes
+
+    immediate = {
+        every_country = {
+            start_situation = {
+                type = gate_hyper_build_situation
+            }
+        }
+    }
+
+    option = {
+        name = gate_event.1.option
+    }
+}
+
+situation_event = {
+    id = gate_events.4 
+    is_triggered_only = yes
+    picture = "GFX_evt_astral_rift_desert_ruins_third_chamber"
+
+    fire_only_once = yes
+
+    immediate = {
+        destroy_situation = this
+    }
+
+    option = {
+        name = hyperlane.done
+        custom_tooltip = hyperlane.done.tooltip
+    }
+}

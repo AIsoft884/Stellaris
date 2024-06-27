@@ -1,0 +1,135 @@
+namespace = gate_dismantle
+
+#	Gate 1
+
+situation_event = {
+	id = gate_dismantle.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_one
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_one_dismantle_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+#	dont know if need
+#country_event = {
+#	id = gate_dismantle.2
+#	is_triggered_only = yes
+#
+#	trigger = {
+#		any_country = {
+#			any_owned_megastructure = {
+#				has_megastructure_flag = gate_one_build_start
+#			}
+##		}
+#	}
+#
+#	immediate = {
+#		every_country = {
+#			start_situation = {
+#				type = gate_one_build_situation
+#			}
+#		}
+#	}
+#}#
+#
+#WTF IS THIS???
+#
+#situation_event = {
+#	id = gate_dismantle.3
+#	is_triggered_only = yes
+#	hide_window = yes
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		count_megastructure = {
+#			count = 0
+#			limit = { 
+#				is_megastructure_type = scooter_gate_active_one
+#			}
+#		}
+#	}
+#
+#	immediate = {
+#		every_country = {
+#			every_situation = {
+#				limit = {
+#					is_situation_type = gate_one_build_situation
+#				}
+#				destroy_situation = this
+#			}
+#		}
+#	}
+#}
+#
+
+
+
+
+#	MANUAL CANCEL SITUATION		###
+
+
+country_event = {
+	id = gate_dismantle.4
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					OR = {
+						is_situation_type = gate_one_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_two_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_three_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_four_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_five_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_six_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_seven_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_eight_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_nine_dismantle_situation
+					}
+					OR = {
+						is_situation_type = gate_ten_dismantle_situation
+					}
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}

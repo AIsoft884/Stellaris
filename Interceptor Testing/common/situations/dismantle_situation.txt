@@ -1,0 +1,633 @@
+
+
+#	Gate 1
+
+gate_one_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 2
+
+gate_two_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 3
+
+gate_three_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 4
+
+gate_four_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+# Gate 5
+
+gate_five_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 6
+
+gate_six_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+
+#	Gate 7
+
+gate_seven_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_one_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 8
+
+gate_eight_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_eight_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+
+#	Gate 9
+
+gate_nine_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_nine_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}
+
+#	Gate 10
+
+gate_ten_dismantle_situation = {
+	picture = GFX_evt_fleet_evil
+	desc = {
+		text = gate_ten_dismantle_situation_desc
+		trigger = { }
+	}
+	category = negative
+	fail_icon = GFX_situation_outcome_meh
+	fail_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_bankrupcy
+	complete_icon_frame = GFX_situation_outcome_frame_red
+
+
+	start_value = 0
+
+	monthly_progress = {
+		base = 30
+	}
+
+	stages = {
+		5_years_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 360
+		}
+		4_years_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 720
+		}
+		3_years_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 1080
+		}
+		2_years_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 1440
+		}
+		1_year_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 1800
+		}
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gateway.destroyed
+		hidden_effect = {
+			situation_event = { id = gate_dismantle.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_dismantle.1
+		}
+	}
+}

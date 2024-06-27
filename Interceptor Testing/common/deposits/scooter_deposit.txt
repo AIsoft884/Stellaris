@@ -1,0 +1,24 @@
+d_planet_terminal = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	potential = {
+		can_have_habitable_deposits = yes
+	}
+
+	planet_modifier = {
+		district_generator_max = 3
+	}
+
+	drop_weight = {
+		weight = 1
+		modifier = {
+			factor = 1
+			solar_system = {
+				OR = {
+					has_star_flag = gate_inactive_planet
+				}
+			}
+		}
+	}
+}

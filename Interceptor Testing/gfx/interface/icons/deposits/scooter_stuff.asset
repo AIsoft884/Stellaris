@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_d_planet_terminal"
+        texturefile = "gfx/interface/icons/deposits/d_planet_terminal.dds"
+    }
+}

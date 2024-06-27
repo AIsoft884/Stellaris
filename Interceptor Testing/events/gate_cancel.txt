@@ -1,0 +1,575 @@
+namespace = gate_owner
+
+# GATE 1
+
+system_event = {
+	id = gate_owner.1
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_one_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        log = "gate_owner.1 triggered"
+        save_event_target_as = gate_one_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_one
+                has_megastructure_flag = gate_one_build_start
+            }
+            save_event_target_as = gate_one_save
+            log = "Removing megastructure: [event_target:gate_one_save]"
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_one
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.2
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_one_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_one_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+# GATE 2? NEED THINK ABOUT THIS!!!!
+
+#	GATE 3
+
+system_event = {
+	id = gate_owner.31
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_three_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_three_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_three
+                has_megastructure_flag = gate_three_build_start
+            }
+            save_event_target_as = gate_three_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_three
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.32
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_three_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_three_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+#	Gate 4
+
+system_event = {
+	id = gate_owner.41
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_four_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_four_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_four
+                has_megastructure_flag = gate_four_build_start
+            }
+            save_event_target_as = gate_four_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_four
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.42
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_four_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_four_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+#	Gate 5
+
+system_event = {
+	id = gate_owner.51
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_five_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_five_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_four
+                has_megastructure_flag = gate_five_build_start
+            }
+            save_event_target_as = gate_five_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_five
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.52
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_five_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_five_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+
+#	Gate 6
+
+system_event = {
+	id = gate_owner.61
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_six_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_six_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_six
+                has_megastructure_flag = gate_six_build_start
+            }
+            save_event_target_as = gate_six_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_six
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.62
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_six_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_six_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+#	Gate 7
+
+system_event = {
+	id = gate_owner.71
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_seven_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_seven_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_seven
+                has_megastructure_flag = gate_seven_build_start
+            }
+            save_event_target_as = gate_seven_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_seven
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.72
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_seven_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_seven_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+
+#	Gate 8
+
+system_event = {
+	id = gate_owner.81
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_eight_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_eight_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_eight
+                has_megastructure_flag = gate_eight_build_start
+            }
+            save_event_target_as = gate_eight_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_eight
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.82
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_eight_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_eight_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+
+#	Gate 9
+
+system_event = {
+	id = gate_owner.91
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_nine_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_nine_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_nine
+                has_megastructure_flag = gate_nine_build_start
+            }
+            save_event_target_as = gate_nine_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_nine
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.92
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_nine_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_nine_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}
+
+#	Gate 10
+
+system_event = {
+	id = gate_owner.101
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		any_country = {
+			is_at_war = yes
+			any_owned_megastructure = {
+				has_megastructure_flag = gate_ten_build_start
+			}
+		}
+	}
+	
+	immediate = {
+        save_event_target_as = gate_ten_system
+
+        every_system_megastructure = {
+            limit = { 
+                is_megastructure_type = scooter_gate_ten
+                has_megastructure_flag = gate_ten_build_start
+            }
+            save_event_target_as = gate_ten_save
+            remove_megastructure = this
+            prev = {
+                spawn_megastructure = {
+                    type = scooter_gate_ten
+                    coords_from = prev
+                }
+            }
+        }
+    }
+}
+
+situation_event = {
+	id = gate_owner.102
+	is_triggered_only = yes
+	hide_window = yes
+	situation = this
+
+	trigger = {
+		NOT = {
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_ten_build_cancel
+				}
+			}
+		}
+	}
+	immediate = {
+		every_country = {
+			every_situation = {
+				limit = {
+					is_situation_type = gate_ten_build_situation
+				}
+				destroy_situation = this
+			}
+		}
+	}
+}

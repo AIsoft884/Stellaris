@@ -1,0 +1,90 @@
+interceptor_situaton = {
+	picture = GFX_evt_l-gateway
+	desc = {
+		text = interceptor_situation.desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	stages = {
+		gate_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_blue
+			end = 10
+			on_first_enter = {
+				situation_event = { id = gate.1 }
+			}
+			custom_tooltip = gate_one_effect
+		}
+		gate_2 = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_blue
+			end = 20
+			
+		}
+		gate_3 = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_blue
+			end = 30
+		}
+		gate_4 = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_blue
+			end = 40
+		}
+		gate_5 = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_blue
+			end = 50
+		}
+		gate_6 = {
+			icon = GFX_situation_stage_6
+			icon_background = GFX_situation_stage_frame_blue
+			end = 60
+		}
+		gate_7 = {
+			icon = GFX_situation_stage_7
+			icon_background = GFX_situation_stage_frame_blue
+			end = 70
+		}
+		gate_8 = {
+			icon = GFX_situation_stage_8
+			icon_background = GFX_situation_stage_frame_blue
+			end = 80
+		}
+		gate_9 = {
+			icon = GFX_situation_stage_9
+			icon_background = GFX_situation_stage_frame_blue
+			end = 90
+		}
+		gate_10 = {
+			icon = GFX_situation_stage_10
+			icon_background = GFX_situation_stage_frame_blue
+			end = 100
+		}
+	}
+
+	monthly_progress = {
+		base = 0
+	}
+
+	on_monthly = {
+		events = {
+			gate.1
+			gate.3
+			gate.4
+			gate.5
+			gate.6
+			gate.7
+			gate.8
+			gate.9
+			gate.10
+			gate.11
+		}
+	}
+}

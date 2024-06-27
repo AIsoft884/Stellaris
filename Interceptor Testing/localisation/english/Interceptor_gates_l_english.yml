@@ -1,0 +1,336 @@
+﻿l_english:
+
+ # Anomalies #
+ gate_category: "Ancient city detected"
+ gate_terminal: "We detected ancient city exactly as our founders said. We need find gateway terminal and find what everything we need for gateway activation."
+
+ hyper_connect_category:0 "No Hyperline"
+ hyperline_construction:0 "System is sealed and we need know why. It seems founders prepared this system for us. We need understand how to construct hyperlane from this sealed system"
+ hyperline_construction:0 "System is sealed and we need know why. It seems founders prepared this system for us. We need understand how to construct hyperlane from this sealed system"
+
+ # gate_events.1
+
+ gate_event.1.title: "Gateway Terminal Ready"
+ gate_event.1.desc:0 "Gateway Terminal was detected. For activation we have to colonize this world and prepare huge amounts of energy and alloys."
+ gate_event.1.option:0 "Get ready for activation"
+
+ # gate_events.3
+
+ gate_event.3.title:0 "Hyperlane work in progress"
+ gate_event.3.desc:0 "work in progress - hyperlane shit around"
+
+ gate.2.name:0 "Gateway Activated"
+ gate.2.desc:0 "First gate was activated. We need protect these gates because is not possible build new ones. This gates are anciet technology of our masters."
+
+ gate.3.name:0 "Gateway Activated"
+ gate.3.desc:0 "This gateway was already activated. We are not sure if this gate was activated before or our first activation started this gate as well. This seems to be impoosible tell what happened. Maybe our founder kept this isolated system on purupose."
+
+ gate.4.name:0 "Gateway Activated"
+ gate.4.desc:0 "The third ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.5.name:0 "gate.4.name"
+ gate.5.desc:0 "The fourth ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.6.name:0 "gate.5.name"
+ gate.6.desc:0 "The fifth ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!."
+
+ gate.7.name:0 "gate.6.name"
+ gate.7.desc:0 "The sixth ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.8.name:0 "gate.7.name"
+ gate.8.desc:0 "The seventh ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.9.name:0 "gate.8.name"
+ gate.9.desc:0 "The eighth ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.10.name:0 "gate.9.name"
+ gate.10.desc:0 "The ninth ancient gateway is activated. Gateway gave us acces to front line. We need protect gate as long as possible. We can be sure that gate will draw attention! Do not forget - we need protect gate terminal!"
+
+ gate.11.name:0 "gate.10.name"
+ gate.11.desc:0 "The tenth ancient gateway is activated. From now we cannot lose gate. It is our final doorway to battlefield. We now have to finish our mission."
+
+ gate_eight_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+ gate_nine_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be  destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+ gate_ten_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+
+ hyperlane.done:0 "Ready for fight!"
+ hyperlane.done.tooltip:0 "tooltip testing text"
+
+ # GATES DEACTIVATED
+
+ scooter_gate_one:0 "Ancient Disabled Gateway"
+ scooter_gate_one_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_two:0 "Ancient Disabled Gateway"
+ scooter_gate_two_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_three:0 "Ancient Disabled Gateway"
+ scooter_gate_three_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_four:0 "Ancient Disabled Gateway"
+ scooter_gate_four_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_five:0 "Ancient Disabled Gateway"
+ scooter_gate_five_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_six:0 "Ancient Disabled Gateway"
+ scooter_gate_six_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_seven:0 "Ancient Disabled Gateway"
+ scooter_gate_seven_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_eight:0 "Ancient Disabled Gateway"
+ scooter_gate_eight_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_nine:0 "Ancient Disabled Gateway"
+ scooter_gate_nine_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ scooter_gate_ten:0 "Ancient Disabled Gateway"
+ scooter_gate_ten_DESC:0 "This Disabled Gateway need 5 years for activation and terminal under control to start activation process"
+
+ # GATES ACTIVATED
+
+ scooter_gate_active_one:0 "Active Gateway"
+ scooter_gate_active_one_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_two:0 "Active Gateway"
+ scooter_gate_active_two_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_three:0 "Active Gateway"
+ scooter_gate_active_three_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_four:0 "Active Gateway"
+ scooter_gate_active_four_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_five:0 "Active Gateway"
+ scooter_gate_active_five_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_six:0 "Active Gateway"
+ scooter_gate_active_six_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_seven:0 "Active Gateway"
+ scooter_gate_active_seven_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_eight:0 "Active Gateway"
+ scooter_gate_active_eight_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_nine:0 "Active Gateway"
+ scooter_gate_active_nine_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ scooter_gate_active_ten:0 "Active Gateway"
+ scooter_gate_active_ten_DESC:0 "This legendary gateways has been build by founders. This gateway system was ultimate travel option."
+
+ # Interceptor Situation and Events
+
+ interceptor_situaton:0 "Ancient Gateways"
+ interceptor_situation.desc:0 "This gateways are important part to our progress. Fanatics worlds is far and thew will not give up just like that. Only possible success is to activate all gateways."
+ interceptor_situaton_type:0 "This gateways are crucial for our progress. We detected 9 more gateways and to succesfully finish ou mission we need activate all of them. Is very unlikely that we can finish this mission withot activating these gates"
+ interceptor_situaton_monthly_change_tooltip:0 "For progress we need activate gates."
+ gate_one_effect:0 "Gateway Activation Protocol One"
+ gate_1: "Gateway 1"
+ gate_2: "Gateway 2"
+ gate_3: "Gateway 3"
+ gate_4: "Gateway 4"
+ gate_5: "Gateway 5"
+ gate_6: "Gateway 6"
+ gate_7: "Gateway 7"
+ gate_8: "Gateway 8"
+ gate_9: "Gateway 9"
+ gate_10: "Gateway 10"
+
+ gate.1.name:0 "First of ten activated"
+ gate.1.desc:0 "First acnient gateway is activated. This one is safe in our external cluster but is possible that next gates will be in dangerous areas."
+ 
+
+
+ # Gate Build Situation
+ # Gate 1
+
+ gate_one_build_situation:0 "Gateway Activation"
+ gate_one_build_situation_desc:0 "Material Fusion started. Constant supply of energy is needed to restart this magnificient technology. We need operate and control planet terminal whole 5 years to finish this process."
+ gate_one_build_situation_type:0 "Activation progress of Gate has started. Gate activation need lot of energy and we control this process by operating the terminal. We estimated 5 years to activate this gate"
+ gate_one_build_situation_monthly_change_tooltip:0 "Gate one activation."
+ gate_finished:0 "Gate will be activated in 5 years."
+ build_stage_1: "Activation Sequence"
+
+ # Gate 2       Hyperlane construction
+
+ gate_hyper_build_situation:0 "Hyperlane Construction"
+ gate_hyper_build_situation_type:0 "We dected anchod points from old hyperlane - it is clear now that hyperlane was destroyed in past. Because great effort of our program we are able kick start gativational connection between systems - by correct maninpulation we should be abele construct this hyperline"
+ gate_hyper_build_situation_monthly_change_tooltip:0 "Hyperlane construction process"
+ gate_two_build_situation_desc:0 "After signs of old hyperlane we started push tons of gravitons in point calculated point. This process takes time and a many expensive resources. We should be able finish this process and then we access battlefield. We need to be ready because reapers and fanatics will not be happy to see us. In case of need we can pause this process and finish it in right timing."
+ hyperlane_finished:0 "Battlefield connection warning! Prepare for heavy fights!!!"
+
+ 5_years_hyper_left_stage: "5 Years to construction"
+ 4_years_hyper_left_stage: "4 Years to construction"
+ 3_years_hyper_left_stage: "3 Years to construction"
+ 2_years_hyper_left_stage: "2 Years to construction"
+ 1_years_hyper_left_stage: "1 Years to construction"
+
+ # Gate 3
+
+ gate_three_build_situation:0 "Gateway Activation"
+ gate_three_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_three_build_situation_monthly_change_tooltip:0 "Gate three activation."
+ gate_three_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 4
+
+ gate_four_build_situation:0 "Gateway Activation"
+ gate_four_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_four_build_situation_monthly_change_tooltip:0 "Gate four activation."
+ gate_four_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 5
+
+ gate_five_build_situation:0 "Gateway Activation"
+ gate_five_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_five_build_situation_monthly_change_tooltip:0 "Gate five activation."
+ gate_five_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 6
+
+ gate_six_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+ gate_six_build_situation:0 "Gateway Activation"
+ gate_six_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_six_build_situation_monthly_change_tooltip:0 "Gate six activation."
+ 
+ # Gate 7
+
+ gate_seven_build_situation:0 "Gateway Activation"
+ gate_seven_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_seven_build_situation_monthly_change_tooltip:0 "Gate seven activation."
+ gate_seven_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 8
+
+ gate_eight_build_situation:0 "Gateway Activation"
+ gate_eight_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_eight_build_situation_monthly_change_tooltip:0 "Gate eight activation."
+ gate_eight_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 9
+
+ gate_nine_build_situation:0 "Gateway Activation"
+ gate_nine_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_nine_build_situation_monthly_change_tooltip:0 "Gate nine activation."
+ gate_nine_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+ # Gate 10
+
+ gate_ten_build_situation:0 "Gateway Activation"
+ gate_ten_build_situation_type:0 "The activation progress of the gate has started. Gate activation requires a lot of energy, and we control this process by operating the terminal. We estimate it will take 5 years to activate this gate."
+ gate_ten_build_situation_monthly_change_tooltip:0 "Gate ten activation."
+ gate_ten_build_situation_desc:0 "Material fusion has started. A constant supply of energy is needed to restart this magnificent technology. We need to operate and control the planet terminal for 5 years to complete this process."
+
+
+
+ # Gate Build Events
+
+ gate_build.2.name:0 "Gate Activation Protocol"
+ gate_build.2.desc:0 "Gateway activation protocol has been started. We have to cotrol planet terminal all time!"
+ gate_build.2.option:0 "Get ready!"
+
+ gate_build.32.name:0 "Gate Activation Protocol"
+ gate_build.32.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.32.option:0 "Get ready!"
+
+ gate_build.42.name:0 "Gate Activation Protocol"
+ gate_build.42.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.42.option:0 "Get ready!"
+
+ gate_build.52.name:0 "Gate Activation Protocol"
+ gate_build.52.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.52.option:0 "Get ready!"
+
+ gate_build.62.name:0 "Gate Activation Protocol"
+ gate_build.62.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.62.option:0 "Get ready!"
+
+ gate_build.72.name:0 "Gate Activation Protocol"
+ gate_build.72.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.72.option:0 "Get ready!"
+
+ gate_build.82.name:0 "Gate Activation Protocol"
+ gate_build.82.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.82.option:0 "Get ready!"
+
+ gate_build.92.name:0 "Gate Activation Protocol"
+ gate_build.92.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.92.option:0 "Get ready!"
+
+ gate_build.102.name:0 "Gate Activation Protocol"
+ gate_build.102.desc:0 "The gateway activation protocol has started. We have to control the planet terminal at all times!"
+ gate_build.102.option:0 "Get ready!"
+
+
+
+ # Gate Dismantle Situation
+
+ gate_one_dismantle_situation:0 "Gateway Deactivation"
+ gate_one_dismantle_situation_desc:0 "Enemy controls this gate terminal! They cutting off energy source and if that happens gravitational fields will colapse and gate will be destroyed!!! We have to stop them! Without gate we will not be able bring anymore reinforcements."
+ gate_one_dismantle_situation_type:0 "Use this when you start Dismantle - it will start dismantle situation."
+ gate_one_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+ gateway.destroyed:0 "Gate will be deactivated"
+ gateway.destroyed:0 "Gate will be deactivated"
+ 5_years_left_stage: "5 Years to deactivation"
+ 4_years_left_stage: "4 Years to deactivation"
+ 3_years_left_stage: "3 Years to deactivation"
+ 2_years_left_stage: "2 Years to deactivation"
+ 1_year_left_stage: "1 Years to deactivation"
+
+ 
+ gate_two_dismantle_situation:0 "Gateway Deactivation"
+ gate_two_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_two_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_three_dismantle_situation:0 "Gateway Deactivation"
+ gate_three_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_three_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_four_dismantle_situation:0 "Gateway Deactivation"
+ gate_four_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_four_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_five_dismantle_situation:0 "Gateway Deactivation"
+ gate_five_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_five_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_six_dismantle_situation:0 "Gateway Deactivation"
+ gate_six_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_six_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_seven_dismantle_situation:0 "Gateway Deactivation"
+ gate_seven_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_seven_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+
+ gate_eight_dismantle_situation:0 "Gateway Deactivation"
+ gate_eight_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_eight_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+ gate_eight_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+ gate_nine_dismantle_situation:0 "Gateway Deactivation"
+ gate_nine_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_nine_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+ gate_nine_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+ gate_ten_dismantle_situation:0 "Gateway Deactivation"
+ gate_ten_dismantle_situation_type:0 "Use this when you start the dismantle process - it will start the dismantle situation."
+ gate_ten_dismantle_situation_monthly_change_tooltip:0 "Deactivation protocol"
+ gate_ten_dismantle_situation_desc:0 "The enemy controls this gate terminal! They are cutting off the energy source and if that happens, gravitational fields will collapse and the gate will be destroyed! We have to stop them! Without the gate, we will not be able to bring in any more reinforcements."
+
+
+
+ # Gate Edictc for dismantle
+ edict_dismantle_gate:0 "Dismantle Situation Start!"
+ edict_dismantle_gate_desc:0 "Use this to Start Situacion"
+ edict_dismantle_cancel:0 "Dismantle Abort"
+ edict_dismantle_cancel_desc:0 "Use this when they cancel abort"
+
+ # planet feature - Terminal
+
+ d_planet_terminal:0 "Gateway Terminal"
+ d_planet_terminal_desc:0 "This terminal is direct control panel to gateway manipulation."

@@ -1,0 +1,567 @@
+### GATE ONE ACTIVATION
+
+gate_one_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_one_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_one_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.1 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.1
+			gate_build.3
+			gate_owner.2
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+
+#### GATE TWO - HYPER LANE CONSTRUCTION
+
+gate_hyper_build_situation = {
+	picture = GFX_evt_glitchy_matrix
+	desc = {
+		text = gate_two_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_two_situation_flag
+	}
+
+	stages = {
+		5_years_hyper_left_stage = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_green
+			end = 360
+		}
+		4_years_hyper_left_stage = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_green
+			end = 720
+		}
+		3_years_hyper_left_stage = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_green
+			end = 1080
+		}
+		2_years_hyper_left_stage = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_green
+			end = 1440
+		}
+		1_year_hyper_left_stage = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 1800
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = hyperlane_finished
+		hidden_effect = {
+			situation_event = { id = gate_events.4 } }
+		destroy_situation = this
+	}
+}
+
+# GATE 3
+
+gate_three_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_three_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_three_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.31 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.31
+			gate_build.33
+			gate_owner.32
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+
+#	Gate 4
+
+gate_four_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_four_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_four_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.41 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.41
+			gate_build.43
+			gate_owner.42
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+#	Gate 5
+
+gate_five_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_six_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_five_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.51 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.51
+			gate_build.53
+			gate_owner.52
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+
+#	Gate 6
+
+gate_six_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_six_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_six_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.61 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.61
+			gate_build.63
+			gate_owner.62
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+#	Gate 7
+
+gate_seven_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_seven_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_seven_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.71 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.71
+			gate_build.73
+			gate_owner.72
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+
+#	Gate 8
+
+
+gate_eight_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_eight_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_eight_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.81 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.81
+			gate_build.83
+			gate_owner.82
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+#	Gate 9
+
+gate_nine_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_nine_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_nine_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.91 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.91
+			gate_build.93
+			gate_owner.92
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}
+
+#	Gate 10
+
+gate_ten_build_situation = {
+	picture = GFX_evt_astral_rift_microverse
+	desc = {
+		text = gate_ten_build_situation_desc
+		trigger = { }
+	}
+	complete_icon_frame = GFX_situation_outcome_frame_green
+	complete_icon = GFX_situation_outcome_positive
+	category = positive
+
+
+	start_value = 0
+
+	on_start = {
+		set_situation_flag = gate_ten_situation_flag
+	}
+
+	stages = {
+		build_stage_1 = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_green
+			end = 3600
+		}
+	}
+
+	monthly_progress = {
+		base = 30
+	}
+
+	on_progress_complete = {
+		custom_tooltip = gate_finished
+		hidden_effect = {
+			situation_event = { id = gate_build.101 } }
+		destroy_situation = this
+	}
+
+	on_monthly = {
+		events = {
+			gate_build.101
+			gate_build.103
+			gate_owner.102
+		}
+	}
+
+	abort_trigger = {
+		target = {
+			OR = {
+				NOT = { exists = target.owner }
+				target.owner = { NOT = { is_same_value = root.owner } }
+			}
+		}
+	}
+}

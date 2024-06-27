@@ -1,0 +1,357 @@
+namespace = gate
+#	GATE 1
+situation_event = {
+	id = gate.1
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.1.name
+	desc = gate.1.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_one
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_one_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+
+# New Gateway Activated
+country_event = {
+	id = gate.2
+	title = gate.2.name
+	desc = gate.2.desc
+	picture = GFX_evt_drifting_gateway
+	show_sound = event_radio_chatter
+	location = from
+
+	is_triggered_only = yes
+
+	option = {
+		name = EXCELLENT
+	}
+}
+
+#	Gate 2
+
+situation_event = { ############ REFURBISH TO HYPER CONSTRUCTION
+	id = gate.3
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.3.name
+	desc = gate.3.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		any_country = {
+			any_owned_planet = {
+				has_planet_flag = gate_planet_two
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+#	Gate 3
+
+situation_event = {
+	id = gate.4
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.4.name
+	desc = gate.4.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_three
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_three_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.5
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.5.name
+	desc = gate.5.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_four
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_four_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.6
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.6.name
+	desc = gate.6.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_five
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_five_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.7
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.7.name
+	desc = gate.7.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_six
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_six_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.8
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.8.name
+	desc = gate.8.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_seven
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_seven_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.9
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.9.name
+	desc = gate.9.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_eight
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_eight_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.10
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.10.name
+	desc = gate.10.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_nine
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_nine_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}
+
+situation_event = {
+	id = gate.11
+	is_triggered_only = yes
+	picture = GFX_evt_l-gateway
+	title = gate.11.name
+	desc = gate.11.desc
+
+	location = target
+	situation = this
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			any_country = {
+				has_megastructure = scooter_gate_active_ten
+			}
+			any_country = {
+				any_owned_megastructure = {
+					has_megastructure_flag = gate_ten_active
+				}
+			}
+		}
+	}
+
+	immediate = {
+		every_country = {
+			every_situation = {
+				add_situation_progress = 10
+			}
+		}
+	}
+}

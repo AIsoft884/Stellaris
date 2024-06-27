@@ -1,0 +1,4 @@
+###	- Hyperlane event
+### - Approach to hyperlane construction + halt - timing strategy - expensive approaches
+### - gateways final names and deposits
+### - situation points double check

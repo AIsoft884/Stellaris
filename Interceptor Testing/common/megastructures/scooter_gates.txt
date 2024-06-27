@@ -1,0 +1,1045 @@
+# Deactivated Gateway
+
+scooter_gate_one = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+	
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+# Most likely just number holder - not used in game.
+scooter_gate_two = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_three = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_four = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_five = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_six = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_seven = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_eight = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_nine = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+scooter_gate_ten = {
+	entity = "deactivated_gateway_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	bypass_type = gateway
+	show_galactic_map_icon = no
+	show_in_outliner = yes
+
+	construction_blocks_and_blocked_by = self_type
+
+	potential = {
+		always = no
+	}
+}
+
+# Activated Gates
+
+scooter_gate_active_one = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_one
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_one
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_one
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_one_build_start
+			set_megastructure_flag = gate_one_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.2 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_one_active
+			remove_megastructure_flag = gate_one_build_start
+			remove_megastructure_flag = gate_one_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_one
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_two = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_two
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_two
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_two
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_two_build_start
+			set_megastructure_flag = gate_two_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.2 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_two_active
+			remove_megastructure_flag = gate_two_build_start
+			remove_megastructure_flag = gate_two_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2}
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_two
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_three = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_three
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_three
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_three
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_three_build_start
+			set_megastructure_flag = gate_three_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.32 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_three_active
+			remove_megastructure_flag = gate_three_build_start
+			remove_megastructure_flag = gate_three_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_three
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_four = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_four
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_four
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_four
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_four_build_start
+			set_megastructure_flag = gate_four_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.42 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_four_active
+			remove_megastructure_flag = gate_four_build_start
+			remove_megastructure_flag = gate_four_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_four
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_five = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_five
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_five
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_five
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_five_build_start
+			set_megastructure_flag = gate_five_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.52 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_five_active
+			remove_megastructure_flag = gate_five_build_start
+			remove_megastructure_flag = gate_five_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_five
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_six = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_six
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_six
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_six
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_six_build_start
+			set_megastructure_flag = gate_six_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.62 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_six_active
+			remove_megastructure_flag = gate_six_build_start
+			remove_megastructure_flag = gate_six_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_six
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_seven = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_seven
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_seven
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_seven
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_seven_build_start
+			set_megastructure_flag = gate_seven_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.72 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_seven_active
+			remove_megastructure_flag = gate_seven_build_start
+			remove_megastructure_flag = gate_seven_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_seven
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_eight = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_eight
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_eight
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_eight
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_eight_build_start
+			set_megastructure_flag = gate_eight_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.82 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_eight_active
+			remove_megastructure_flag = gate_eight_build_start
+			remove_megastructure_flag = gate_eight_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_eight
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_nine = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_nine
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_nine
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_nine
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_nine_build_start
+			set_megastructure_flag = gate_nine_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.92 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_nine_active
+			remove_megastructure_flag = gate_nine_build_start
+			remove_megastructure_flag = gate_nine_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_nine
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
+
+scooter_gate_active_ten = {
+	entity = "reactivated_gateway_entity"
+	construction_entity = "gateway_portal_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	# build_outside_gravity_well = yes
+	show_galactic_map_icon = no
+	show_in_outliner = no
+	bypass_type = gateway
+
+	potential = {
+		any_owned_planet = {
+			has_planet_flag = gate_planet_ten
+		}
+		any_owned_megastructure = {
+			is_megastructure_type = scooter_gate_ten
+		}	
+	}
+
+	upgrade_from = {
+		scooter_gate_ten
+	}
+	construction_blocks_and_blocked_by = self_type
+
+	build_time = 3600
+	resources = {
+		category = megastructures_gateways
+		cost = {
+			alloys = 15000
+			energy = 15000
+		}
+
+		upkeep = {
+			energy = 500
+		}
+	}
+	on_build_start = {
+		fromfrom = {
+			set_megastructure_flag = gate_ten_build_start
+			set_megastructure_flag = gate_ten_build_cancel
+		}
+		from = { 
+			country_event = { id = gate_build.102 }
+		}
+	}
+
+	on_build_complete = {
+		activate_gateway = fromfrom
+		fromfrom = {
+			set_megastructure_flag = gate_ten_active
+			remove_megastructure_flag = gate_ten_build_start
+			remove_megastructure_flag = gate_ten_build_cancel
+		}
+		from = {
+			country_event = { id = gate.2 }
+		}
+	}
+
+	dismantle_potential = {
+		always = yes
+	}
+
+	dismantle_time = 1800
+
+	dismantle_possible = {
+		from = {
+			owner = {
+				any_owned_megastructure = {
+					is_megastructure_type = scooter_gate_active_ten
+				}
+			}
+		}
+	}
+
+	dismantle_cost = {
+		category = megastructures_hyper_relay
+		cost = {
+			energy = 500
+		}	
+	}
+
+	on_dismantle_complete = {
+		from = {
+			situation_event = { id = gate_dismantle.1 }
+		}
+	}
+}
