@@ -1,3 +1,4 @@
+#ENERGY KEEPER
 ssb_sun_flare_system_initializer = {
 	name = "Sun Flare"
 	class = "sc_b"
