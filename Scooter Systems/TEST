@@ -1,1 +1,449 @@
 
+#DEFENDER SYSTEMS
+ssb_complexorium_system_initializer = {
+	name = "Complexorium"
+	class = "sc_neutron_star"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Complexorium"
+		class = "pc_neutron_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 45
+		has_ring = no
+	}
+
+	planet = {
+		name = "Main Complex"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Deposit 1"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Deposit 2"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Deposit 4"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Oxygenic"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 5
+		has_ring = no
+	}
+
+	neighbor_system = {
+		distance = { min = 10 max = 35 }
+		initializer = "ssb_workstation_1_system_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 20 max = 45 }
+		initializer = "ssb_nazara_domain_system_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 30 max = 55 }
+		initializer = "ssb_harbinger_system_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 40 max = 65 }
+		initializer = "ssb_legion_system_initializer"
+	}
+	neighbor_system = {
+		distance = { min = 50 max = 75 }
+		initializer = "ssb_borgman_system_initializer"
+	}
+}
+ssb_workstation_1_system_initializer = {
+	name = "Workstation 1"
+	class = "sc_b"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Workstation 1"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 38
+		has_ring = no
+	}
+
+	planet = {
+		name = "Factorium 1"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		name = "Depositor 1"
+		class = "pc_frozen"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 14
+		has_ring = no
+	}
+	planet = {
+		name = "Depository 2"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Repositor 1"
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 32
+		change_orbit = 5
+		has_ring = no
+	}
+	planet = {
+		name = "Depository 3"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+
+}
+ssb_nazara_domain_system_initializer = {
+	name = "Nazara domain"
+	class = "sc_m"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 185
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Nazara domain"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Munitions Complex"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Watchguard 1"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Watcher 1"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Mineral"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 8
+		has_ring = no
+	}
+	planet = {
+		name = "Hover 1"
+		class = "pc_frozen"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		has_ring = no
+	}
+
+}
+ssb_harbinger_system_initializer = {
+	name = "Harbinger"
+	class = "sc_g"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Harbinger"
+		class = "pc_g_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		name = "Weaponry Factorio"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Weapons Depot"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = no
+	}
+	planet = {
+		name = "Weapon Cache 1"
+		class = "pc_molten"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Weapon Cache 2"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Weapon Cache 3"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+
+}
+ssb_legion_system_initializer = {
+	name = "Legion"
+	class = "sc_t_star"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Legion"
+		class = "pc_t_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Workshop 1"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Workstation 1"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Workstation 2"
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Workstation 3"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Workspace 1"
+		class = "pc_barren_cold"
+		orbit_distance = 90
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+
+}
+ssb_borgman_system_initializer = {
+	name = "Borgman"
+	class = "sc_pulsar"
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+	}
+
+	planet = {
+		name = "Borgman"
+		class = "pc_pulsar"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 39
+		has_ring = no
+	}
+
+	planet = {
+		name = "Factorian"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+	planet = {
+		name = "Watchtower 1"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		name = "Overguard 1"
+		class = "pc_barren"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+	planet = {
+		name = "Cache 01"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 15
+		has_ring = no
+	}
+	planet = {
+		name = "Weaponry Depo 010"
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 25
+		has_ring = no
+	}
+
+}
+
