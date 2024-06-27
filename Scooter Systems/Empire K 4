@@ -1,3 +1,4 @@
+#Crusher Keeper
 ssb_grindstone_system_initializer = {
 	name = "Grindstone"
 	class = "sc_m"
