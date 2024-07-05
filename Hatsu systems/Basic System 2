@@ -1,3 +1,174 @@
+ssb_colarvis_system_initializer = {
+	name = "Colarvis"
+	class = "sc_m"
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 220
+	}
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Colarvis"
+		class = "pc_m_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 30
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_barren"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 11
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			class = "pc_asteroid"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 4
+			tile_blockers = none
+			modifiers = none
+		}
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			class = "pc_asteroid"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 24
+			tile_blockers = none
+			modifiers = none
+		}
+	}
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+		moon = {
+			class = "pc_gas_giant"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 5
+			tile_blockers = none
+			modifiers = none
+		}
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 13
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 22
+		change_orbit = 5
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+		moon = {
+			class = "pc_asteroid"
+			orbit_distance = 12
+			orbit_angle = { min = 90 max = 270 }
+			size = 15
+			tile_blockers = none
+			modifiers = none
+		}
+	}
+	planet = {
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 16
+		has_ring = no
+		tile_blockers = none
+		modifiers = none
+		init_effect = {
+			prevent_anomaly = yes
+		}
+	}
+
+}
 ssb_polvosie_system_initializer = {
 	name = "Polvosie"
 	class = "sc_m"
