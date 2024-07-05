@@ -1,3 +1,38 @@
+ssb_koutis_system_initializer = {
+	name = "Koutis"
+	class = "sc_black_hole"
+	usage = custom_empire
+	init_effect = {
+		every_neighbor_system = {
+			set_star_flag = empire_cluster
+			every_neighbor_system = {
+				set_star_flag = empire_cluster
+			}
+		}
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "Koutis"
+		class = "pc_black_hole"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 36
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = yes
+		change_orbit = 5
+		tile_blockers = none
+		modifiers = none
+	}
+
+}
 ssb_elristea_system_initializer = {
 	name = "Elristea"
 	class = "sc_m"
