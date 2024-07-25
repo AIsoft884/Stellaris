@@ -1,18 +1,21 @@
+###		DISTORTION KEEPER
+
+
 ssb_distortion_base_1_system_initializer = {
 	name = "Distortion Base 1"
 	class = "sc_black_hole"
+	flags = {
+		interceptor_map
+		distortion_start_system
+		distortion_capitol
+		distortion_homeworld
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 250
 	}
 	usage = custom_empire
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
 		generate_home_system_resources = yes
 	}
 
@@ -32,10 +35,46 @@ ssb_distortion_base_1_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 35
 		has_ring = no
-		tile_blockers = none
+		starting_planet = yes
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
+			set_planet_flag = planet_distortion
+			set_planet_flag = distortion_homeworld
+			save_global_event_target_as = distortion_homeworld
+
+			check_for_distortion_player = yes
+
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = keeper_distortion_empire
+					}
+				}
+				random_country = {
+					limit = {
+						has_country_flag = keeper_distortion_empire
+					}
+					save_global_event_target_as = keeper_distortion_empire
+				}
+			}
+			else = {
+				generate_distortion_unit_country = yes
+			}
+			
+			generate_time_keepers_buildings = yes
+
+			set_capital = yes
+			random_country = { limit = { has_country_flag = keeper_distortion_empire }
+				save_global_event_target_as = distortion_empire_global
+				set_country_flag = interceptor_map
+			}
+			set_owner = event_target:keeper_distortion_empire
+			save_event_target_as = keeper_distortion_empire
+			
+
 			prevent_anomaly = yes
+			set_name = "Distortion Central"
 		}
 	}
 	planet = {
@@ -70,43 +109,20 @@ ssb_distortion_base_1_system_initializer = {
 		size = 23
 		has_ring = no
 	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 35 }
-		initializer = "ssb_distorter__system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 20 max = 45 }
-		initializer = "ssb_warper_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 30 max = 55 }
-		initializer = "ssb_reabsorber_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 40 max = 65 }
-		initializer = "ssb_resurgence_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 50 max = 75 }
-		initializer = "ssb_hyperbol_system_initializer"
-	}
 }
+
+
 ssb_distorter__system_initializer = {
 	name = "Distorter "
 	class = "sc_black_hole"
+	flags = {
+		distortion_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 250
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Distorter "
@@ -132,7 +148,7 @@ ssb_distorter__system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -175,18 +191,14 @@ ssb_distorter__system_initializer = {
 ssb_warper_system_initializer = {
 	name = "Warper"
 	class = "sc_black_hole"
+	flags = {
+		distortion_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Warper"
@@ -211,7 +223,7 @@ ssb_warper_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -246,18 +258,14 @@ ssb_warper_system_initializer = {
 ssb_reabsorber_system_initializer = {
 	name = "Reabsorber"
 	class = "sc_black_hole"
+	flags = {
+		distortion_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 215
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Reabsorber"
@@ -291,7 +299,7 @@ ssb_reabsorber_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -326,18 +334,14 @@ ssb_reabsorber_system_initializer = {
 ssb_resurgence_system_initializer = {
 	name = "Resurgence"
 	class = "sc_black_hole"
+	flags = {
+		distortion_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 145
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Resurgence"
@@ -363,7 +367,7 @@ ssb_resurgence_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -383,18 +387,14 @@ ssb_resurgence_system_initializer = {
 ssb_hyperbol_system_initializer = {
 	name = "Hyperbol"
 	class = "sc_black_hole"
+	flags = {
+		distortion_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 180
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Hyperbol"
@@ -420,7 +420,7 @@ ssb_hyperbol_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
