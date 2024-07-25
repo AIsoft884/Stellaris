@@ -1,1 +1,403 @@
+###		PROPULSION KEEPER - SWOP LATER
 
+
+ssb_the_propulsion_system_initializer = {
+	name = "Propulsion"
+	class = "sc_pulsar"
+	flags = {
+		interceptor_map
+		propulsion_start_system
+		propulsion_capitol
+		propulsion_homeworld
+	}
+	asteroid_belt = {
+		type = rocky_asteroid_belt
+		radius = 115
+	}
+	usage = custom_empire
+	init_effect = {
+		generate_home_system_resources = yes
+	}
+
+	planet = {
+		name = "The Lance"
+		class = "pc_pulsar"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 35
+		has_ring = no
+	}
+
+	planet = {
+		name = "Propulsion"
+		class = "pc_machine"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		has_ring = no
+		starting_planet = yes
+		deposit_blockers = none
+		modifiers = none
+		init_effect = {
+			set_planet_flag = planet_propulsion
+			set_planet_flag = propulsion_homeworld
+			save_global_event_target_as = propulsion_homeworld
+
+			check_for_propulsion_player = yes
+
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = keeper_propulsion_empire
+					}
+				}
+				random_country = {
+					limit = {
+						has_country_flag = keeper_propulsion_empire
+					}
+					save_global_event_target_as = keeper_propulsion_empire
+				}
+			}
+			else = {
+				generate_propulsion_unit_country = yes
+			}
+			
+			generate_time_keepers_buildings = yes
+
+			set_capital = yes
+			random_country = { limit = { has_country_flag = keeper_propulsion_empire }
+				save_global_event_target_as = propulsion_empire_global
+				set_country_flag = interceptor_map
+			}
+			set_owner = event_target:keeper_propulsion_empire
+			save_event_target_as = keeper_propulsion_empire
+			
+
+			prevent_anomaly = yes
+			set_name = "Propulsion planet"
+		}
+	}
+	planet = {
+		name = "Particles Databank"
+		class = "pc_asteroid"
+		orbit_distance = 40
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = no
+	}
+	planet = {
+		name = "Particles Research hub"
+		class = "pc_asteroid"
+		orbit_distance = 0
+		orbit_angle = { min = 90 max = 270 }
+		size = 6
+		has_ring = no
+	}
+	planet = {
+		name = "Data miner 0ZG"
+		class = "pc_barren"
+		orbit_distance = 50
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		name = "Data Sorter 0HJ"
+		class = "pc_barren_cold"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 21
+		has_ring = no
+	}
+
+}
+
+ssb_propulsion_1_system_initializer = {
+	name = "Propulsion 1"
+	class = "sc_b"
+	flags = {
+		propulsion_start_system
+	}
+	usage = custom_empire
+	
+
+	planet = {
+		name = "Propulsion 1"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_machine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
+
+ssb_propulsion_2_system_initializer = {
+	name = "Propulsion 2"
+	class = "sc_b"
+	flags = {
+		propulsion_start_system
+	}
+	usage = custom_empire
+	
+
+	planet = {
+		name = "Propulsion 2"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_machine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
+
+ssb_propulsion_3_system_initializer = {
+	name = "Propulsion 3"
+	class = "sc_b"
+	flags = {
+		propulsion_start_system
+	}
+	usage = custom_empire
+	
+
+	planet = {
+		name = "Propulsion 3"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_machine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
+
+ssb_propulsion_4_system_initializer = {
+	name = "Propulsion 4"
+	class = "sc_b"
+	flags = {
+		propulsion_start_system
+	}
+	usage = custom_empire
+	
+
+	planet = {
+		name = "Propulsion 4"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_machine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
+
+ssb_propulsion_5_system_initializer = {
+	name = "Propulsion 5"
+	class = "sc_b"
+	flags = {
+		propulsion_start_system
+	}
+	usage = custom_empire
+	
+
+	planet = {
+		name = "Propulsion 5"
+		class = "pc_b_star"
+		orbit_distance = 0
+		orbit_angle = 1
+		size = 40
+		has_ring = no
+	}
+
+	planet = {
+		class = "pc_molten"
+		orbit_distance = 75
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_machine"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 30
+		has_ring = no
+	}
+	planet = {
+		class = "pc_gas_giant"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 35
+		change_orbit = 8
+		has_ring = yes
+		change_orbit = 5
+	}
+	planet = {
+		class = "pc_frozen"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 20
+		has_ring = no
+	}
+	planet = {
+		class = "pc_toxic"
+		orbit_distance = 35
+		orbit_angle = { min = 90 max = 270 }
+		size = 18
+		has_ring = no
+	}
+
+}
