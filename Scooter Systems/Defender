@@ -1,16 +1,17 @@
+###		DEFENDER KEEPER
 
-#DEFENDER SYSTEMS
+
 ssb_complexorium_system_initializer = {
 	name = "Complexorium"
 	class = "sc_neutron_star"
+	flags = {
+		interceptor_map
+		defender_start_system
+		defender_capitol
+		defender_homeworld
+	}
 	usage = custom_empire
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
 		generate_home_system_resources = yes
 	}
 
@@ -30,10 +31,45 @@ ssb_complexorium_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 35
 		has_ring = no
-		tile_blockers = none
+		starting_planet = yes
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
+			set_planet_flag = planet_defender
+			set_planet_flag = defender_homeworld
+			save_global_event_target_as = defender_homeworld
+
+			check_for_defender_player = yes
+
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = keeper_defender_empire
+					}
+				}
+				random_country = {
+					limit = {
+						has_country_flag = keeper_defender_empire
+					}
+					save_global_event_target_as = keeper_defender_empire
+				}
+			}
+			else = {
+				generate_defender_unit_country = yes
+			}
+			
+			generate_time_keepers_buildings = yes
+
+			set_capital = yes
+			random_country = { limit = { has_country_flag = keeper_defender_empire }
+				save_global_event_target_as = defender_empire_global
+				set_country_flag = interceptor_map
+			}
+			set_owner = event_target:keeper_defender_empire
+			save_event_target_as = keeper_defender_empire
+			
 			prevent_anomaly = yes
+			set_name = "Main Complex"
 		}
 	}
 	planet = {
@@ -69,43 +105,21 @@ ssb_complexorium_system_initializer = {
 		change_orbit = 5
 		has_ring = no
 	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 35 }
-		initializer = "ssb_workstation_1_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 20 max = 45 }
-		initializer = "ssb_nazara_domain_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 30 max = 55 }
-		initializer = "ssb_harbinger_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 40 max = 65 }
-		initializer = "ssb_legion_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 50 max = 75 }
-		initializer = "ssb_borgman_system_initializer"
-	}
 }
+
+#DEFENDER SYSTEMS
+
 ssb_workstation_1_system_initializer = {
 	name = "Workstation 1"
 	class = "sc_b"
+	flags = {
+		defender_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Workstation 1"
@@ -123,7 +137,7 @@ ssb_workstation_1_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 	}
 	planet = {
@@ -164,18 +178,14 @@ ssb_workstation_1_system_initializer = {
 ssb_nazara_domain_system_initializer = {
 	name = "Nazara domain"
 	class = "sc_m"
+	flags = {
+		defender_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 185
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Nazara domain"
@@ -193,7 +203,7 @@ ssb_nazara_domain_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -236,18 +246,14 @@ ssb_nazara_domain_system_initializer = {
 ssb_harbinger_system_initializer = {
 	name = "Harbinger"
 	class = "sc_g"
+	flags = {
+		defender_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Harbinger"
@@ -265,7 +271,7 @@ ssb_harbinger_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -307,19 +313,15 @@ ssb_harbinger_system_initializer = {
 }
 ssb_legion_system_initializer = {
 	name = "Legion"
-	class = "sc_t_star"
+	class = "sc_t"
+	flags = {
+		defender_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 220
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Legion"
@@ -337,7 +339,7 @@ ssb_legion_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -380,13 +382,8 @@ ssb_legion_system_initializer = {
 ssb_borgman_system_initializer = {
 	name = "Borgman"
 	class = "sc_pulsar"
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
+	flags = {
+		defender_start_system
 	}
 
 	planet = {
@@ -405,7 +402,7 @@ ssb_borgman_system_initializer = {
 		orbit_angle = { min = 90 max = 270 }
 		size = 30
 		has_ring = no
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
 			prevent_anomaly = yes
@@ -446,4 +443,3 @@ ssb_borgman_system_initializer = {
 	}
 
 }
-
