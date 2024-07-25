@@ -1,19 +1,21 @@
-#ENERGY KEEPER
+###		ENERGY KEEPER
+
+
 ssb_sun_flare_system_initializer = {
 	name = "Sun Flare"
 	class = "sc_b"
+	flags = {
+		interceptor_map
+		energy_start_system
+		energy_capitol
+		energy_homeworld
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 185
 	}
 	usage = custom_empire
 	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
 		generate_home_system_resources = yes
 	}
 
@@ -34,15 +36,47 @@ ssb_sun_flare_system_initializer = {
 		size = 35
 		has_ring = no
 		starting_planet = yes
-		tile_blockers = none
+		deposit_blockers = none
 		modifiers = none
 		init_effect = {
+			set_planet_flag = planet_energy
+			set_planet_flag = energy_homeworld
+			save_global_event_target_as = energy_homeworld
+
+			check_for_energy_player = yes
+
+			if = {
+				limit = {
+					any_country = {
+						has_country_flag = keeper_energy_empire
+					}
+				}
+				random_country = {
+					limit = {
+						has_country_flag = keeper_energy_empire
+					}
+					save_global_event_target_as = keeper_energy_empire
+				}
+			}
+			else = {
+				generate_energy_unit_country = yes
+			}
+			
+			generate_time_keepers_buildings = yes
+
+			set_capital = yes
+			random_country = { limit = { has_country_flag = keeper_energy_empire }
+				save_global_event_target_as = energy_empire_global
+				set_country_flag = interceptor_map
+			}
+			set_owner = event_target:keeper_energy_empire
+			save_event_target_as = keeper_energy_empire
+			
+
 			prevent_anomaly = yes
+			set_name = "Accumulator Capitol"
 		}
 
-		init_effect = {
-			generate_start_buildings_and_blockers = yes
-		}
 	}
 	planet = {
 		name = "Candidate 1"
@@ -77,43 +111,21 @@ ssb_sun_flare_system_initializer = {
 		change_orbit = 5
 		has_ring = no
 	}
-
-	neighbor_system = {
-		distance = { min = 10 max = 35 }
-		initializer = "ssb_energetic_conduit_1_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 20 max = 45 }
-		initializer = "ssb_conduit_relay__system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 30 max = 55 }
-		initializer = "ssb_solar_uplink_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 40 max = 65 }
-		initializer = "ssb_relaying_central_system_initializer"
-	}
-	neighbor_system = {
-		distance = { min = 50 max = 75 }
-		initializer = "ssb_relay_unit_system_initializer"
-	}
 }
+
+#ENERGY KEEPER
+
 ssb_energetic_conduit_1_system_initializer = {
 	name = "Energetic conduit 1"
 	class = "sc_a"
+	flags = {
+		energy_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Energetic conduit 1"
@@ -170,18 +182,14 @@ ssb_energetic_conduit_1_system_initializer = {
 ssb_conduit_relay__system_initializer = {
 	name = "Conduit Relay "
 	class = "sc_g"
+	flags = {
+		energy_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 115
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
+	
 
 	planet = {
 		name = "Conduit Relay "
@@ -236,13 +244,8 @@ ssb_conduit_relay__system_initializer = {
 ssb_solar_uplink_system_initializer = {
 	name = "Solar Uplink"
 	class = "sc_a"
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
+	flags = {
+		energy_start_system
 	}
 
 	planet = {
@@ -299,19 +302,14 @@ ssb_solar_uplink_system_initializer = {
 ssb_relaying_central_system_initializer = {
 	name = "Relaying Central"
 	class = "sc_k"
+	flags = {
+		energy_start_system
+	}
 	asteroid_belt = {
 		type = rocky_asteroid_belt
 		radius = 185
 	}
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
-	}
-
+	
 	planet = {
 		name = "Relaying Central"
 		class = "pc_k_star"
@@ -366,13 +364,8 @@ ssb_relaying_central_system_initializer = {
 ssb_relay_unit_system_initializer = {
 	name = "Relay Unit"
 	class = "sc_m"
-	init_effect = {
-		every_neighbor_system = {
-			set_star_flag = empire_cluster
-			every_neighbor_system = {
-				set_star_flag = empire_cluster
-			}
-		}
+	flags = {
+		energy_start_system
 	}
 
 	planet = {
@@ -425,4 +418,3 @@ ssb_relay_unit_system_initializer = {
 	}
 
 }
-
