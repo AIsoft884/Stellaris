@@ -1,8 +1,8 @@
-###		MINER KEEPER - SWOP LATER
+###		MINER KEEPER
 
 
 ssb_the_miner_system_initializer = {
-	name = "Big Mine"
+	name = "Mining Central Unit"
 	class = "sc_pulsar"
 	flags = {
 		interceptor_map
@@ -20,7 +20,7 @@ ssb_the_miner_system_initializer = {
 	}
 
 	planet = {
-		name = "The Lance"
+		name = "Energy Relay 604"
 		class = "pc_pulsar"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -29,7 +29,7 @@ ssb_the_miner_system_initializer = {
 	}
 
 	planet = {
-		name = "Big Mine"
+		name = "Mining Control Unit 01"
 		class = "pc_machine"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -78,7 +78,7 @@ ssb_the_miner_system_initializer = {
 		}
 	}
 	planet = {
-		name = "Particles Databank"
+		name = "Mineral Excavator X11"
 		class = "pc_asteroid"
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
@@ -86,7 +86,7 @@ ssb_the_miner_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Particles Research hub"
+		name = "Mineral Excavator X10"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
@@ -94,7 +94,7 @@ ssb_the_miner_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Data miner 0ZG"
+		name = "Mineral Warehouse Unit 0HG"
 		class = "pc_barren"
 		orbit_distance = 50
 		orbit_angle = { min = 90 max = 270 }
@@ -102,7 +102,7 @@ ssb_the_miner_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Data Sorter 0HJ"
+		name = "Mineral Delivery Unit 0JH"
 		class = "pc_barren_cold"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -113,7 +113,7 @@ ssb_the_miner_system_initializer = {
 }
 
 ssb_miner_1_system_initializer = {
-	name = "Miner 1"
+	name = "Mineral Processer 02"
 	class = "sc_b"
 	flags = {
 		miner_start_system
@@ -122,7 +122,7 @@ ssb_miner_1_system_initializer = {
 	
 
 	planet = {
-		name = "Miner 1"
+		name = "Mohole"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -131,6 +131,7 @@ ssb_miner_1_system_initializer = {
 	}
 
 	planet = {
+		name = "Mineral Reprocessor Unit G66"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -138,6 +139,7 @@ ssb_miner_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Mineral Extracting Complex EFF1"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -145,6 +147,7 @@ ssb_miner_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Mining Gases Extractor"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -154,6 +157,7 @@ ssb_miner_1_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Cooling Material Extractor"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -161,6 +165,7 @@ ssb_miner_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Rare Metals Mining Unit 06"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -171,7 +176,7 @@ ssb_miner_1_system_initializer = {
 }
 
 ssb_miner_2_system_initializer = {
-	name = "Miner 2"
+	name = "Mineral Purfication Hub"
 	class = "sc_b"
 	flags = {
 		miner_start_system
@@ -180,7 +185,7 @@ ssb_miner_2_system_initializer = {
 	
 
 	planet = {
-		name = "Miner 2"
+		name = "Energy Network Relay 094"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -189,6 +194,7 @@ ssb_miner_2_system_initializer = {
 	}
 
 	planet = {
+		name = "Mineral Smelter 1"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -196,6 +202,7 @@ ssb_miner_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Arc Smelting Hub 2"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -203,6 +210,7 @@ ssb_miner_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Coolant Extractor 02"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -212,6 +220,7 @@ ssb_miner_2_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Coolant Processor 07"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -219,6 +228,7 @@ ssb_miner_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Mineral Sorter XR"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -229,7 +239,7 @@ ssb_miner_2_system_initializer = {
 }
 
 ssb_miner_3_system_initializer = {
-	name = "Miner 3"
+	name = "Mineral Reprocessing Hub 3"
 	class = "sc_b"
 	flags = {
 		miner_start_system
@@ -238,7 +248,7 @@ ssb_miner_3_system_initializer = {
 	
 
 	planet = {
-		name = "Miner 3"
+		name = "Mining Logistics Hub 3"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -247,6 +257,7 @@ ssb_miner_3_system_initializer = {
 	}
 
 	planet = {
+		name = "Mineral Storage 0HGR"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -254,6 +265,7 @@ ssb_miner_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Mineral Logistic Unit 1"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -261,6 +273,7 @@ ssb_miner_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Logistic Refuelling Station"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -270,6 +283,7 @@ ssb_miner_3_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Ice Mining Rig"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -277,6 +291,7 @@ ssb_miner_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gas Refinery 05VE"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -287,7 +302,7 @@ ssb_miner_3_system_initializer = {
 }
 
 ssb_miner_4_system_initializer = {
-	name = "Miner 4"
+	name = "Mining Center 4RT"
 	class = "sc_b"
 	flags = {
 		miner_start_system
@@ -296,7 +311,7 @@ ssb_miner_4_system_initializer = {
 	
 
 	planet = {
-		name = "Miner 4"
+		name = "Networker 1"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -305,6 +320,7 @@ ssb_miner_4_system_initializer = {
 	}
 
 	planet = {
+		name = "Excavator 2HVC"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -312,6 +328,7 @@ ssb_miner_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Driller Hub 4"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -319,6 +336,7 @@ ssb_miner_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Drill Fuel Refinery 2YA"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -328,6 +346,7 @@ ssb_miner_4_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Drill Coolant Refinery 2VU"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -335,6 +354,7 @@ ssb_miner_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Cooling Gas extractor RVE5"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -345,7 +365,7 @@ ssb_miner_4_system_initializer = {
 }
 
 ssb_miner_5_system_initializer = {
-	name = "Miner 5"
+	name = "Backup Mining Hub"
 	class = "sc_b"
 	flags = {
 		miner_start_system
@@ -354,7 +374,7 @@ ssb_miner_5_system_initializer = {
 	
 
 	planet = {
-		name = "Miner 5"
+		name = "Backup Relay 0MN"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -363,6 +383,7 @@ ssb_miner_5_system_initializer = {
 	}
 
 	planet = {
+		name = "Mineralisation Unit 1"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -370,6 +391,7 @@ ssb_miner_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Mineral Backup Hub"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -377,6 +399,7 @@ ssb_miner_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Emergency Refinery"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -386,6 +409,7 @@ ssb_miner_5_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Backup Coolant Extractor"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -393,6 +417,7 @@ ssb_miner_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Backup Rare Metals Driller"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
