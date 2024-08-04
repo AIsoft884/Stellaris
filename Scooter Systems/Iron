@@ -2,7 +2,7 @@
 
 
 ssb_the_iron_system_initializer = {
-	name = "Yothamir"
+	name = "Materialisation Central"
 	class = "sc_pulsar"
 	flags = {
 		interceptor_map
@@ -20,7 +20,7 @@ ssb_the_iron_system_initializer = {
 	}
 
 	planet = {
-		name = "The Lance"
+		name = "Forward Processor"
 		class = "pc_pulsar"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -29,7 +29,7 @@ ssb_the_iron_system_initializer = {
 	}
 
 	planet = {
-		name = "Forge"
+		name = "Manufactorium"
 		class = "pc_machine"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -78,7 +78,7 @@ ssb_the_iron_system_initializer = {
 		}
 	}
 	planet = {
-		name = "Particles Databank"
+		name = "Mining Base 0X5"
 		class = "pc_asteroid"
 		orbit_distance = 40
 		orbit_angle = { min = 90 max = 270 }
@@ -86,7 +86,7 @@ ssb_the_iron_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Particles Research hub"
+		name = "Mining Processor Z1"
 		class = "pc_asteroid"
 		orbit_distance = 0
 		orbit_angle = { min = 90 max = 270 }
@@ -94,7 +94,7 @@ ssb_the_iron_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Data miner 0ZG"
+		name = "Material Warehouse 01"
 		class = "pc_barren"
 		orbit_distance = 50
 		orbit_angle = { min = 90 max = 270 }
@@ -102,7 +102,7 @@ ssb_the_iron_system_initializer = {
 		has_ring = no
 	}
 	planet = {
-		name = "Data Sorter 0HJ"
+		name = "Material Reprocessor I0A"
 		class = "pc_barren_cold"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -113,7 +113,7 @@ ssb_the_iron_system_initializer = {
 }
 
 ssb_iron_1_system_initializer = {
-	name = "Iron 1"
+	name = "Secondary Processing Hub"
 	class = "sc_b"
 	flags = {
 		iron_start_system
@@ -122,7 +122,7 @@ ssb_iron_1_system_initializer = {
 	
 
 	planet = {
-		name = "Iron 1"
+		name = "Forward Construction Hub 0E1"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -131,6 +131,7 @@ ssb_iron_1_system_initializer = {
 	}
 
 	planet = {
+		name = "Mineral Remote Miner 0U4"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -138,6 +139,7 @@ ssb_iron_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Material Forge 02R"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -145,6 +147,7 @@ ssb_iron_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gaseous Mining Hub 0110"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -154,6 +157,7 @@ ssb_iron_1_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Hydrogen Remote Miner 0ZE"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -161,6 +165,7 @@ ssb_iron_1_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gas Processor 005"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -171,7 +176,7 @@ ssb_iron_1_system_initializer = {
 }
 
 ssb_iron_2_system_initializer = {
-	name = "Iron 2"
+	name = "Material Reprocesser 01"
 	class = "sc_b"
 	flags = {
 		iron_start_system
@@ -180,7 +185,7 @@ ssb_iron_2_system_initializer = {
 	
 
 	planet = {
-		name = "Iron 2"
+		name = "Material Conductor 02"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -189,6 +194,7 @@ ssb_iron_2_system_initializer = {
 	}
 
 	planet = {
+		name = "Material Collector 0Z"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -196,6 +202,7 @@ ssb_iron_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Material Forgery 03"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -203,6 +210,7 @@ ssb_iron_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gaseous Material Collector 0E1"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -212,6 +220,7 @@ ssb_iron_2_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Hydrogen Processer 05I"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -219,6 +228,7 @@ ssb_iron_2_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gases Processing Unit 06Q"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -229,7 +239,7 @@ ssb_iron_2_system_initializer = {
 }
 
 ssb_iron_3_system_initializer = {
-	name = "Iron 3"
+	name = "Material Hub 3"
 	class = "sc_b"
 	flags = {
 		iron_start_system
@@ -238,7 +248,7 @@ ssb_iron_3_system_initializer = {
 	
 
 	planet = {
-		name = "Iron 3"
+		name = "Energy Connector Relay 01"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -247,6 +257,7 @@ ssb_iron_3_system_initializer = {
 	}
 
 	planet = {
+		name = "Material Reprocesser 009"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -254,6 +265,7 @@ ssb_iron_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Material Forge 05V"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -261,6 +273,7 @@ ssb_iron_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gases Processing Unit 96Y"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -270,6 +283,7 @@ ssb_iron_3_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Hydrogen Processing Hub 05"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -277,6 +291,7 @@ ssb_iron_3_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Gases Collector 5U6"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -287,7 +302,7 @@ ssb_iron_3_system_initializer = {
 }
 
 ssb_iron_4_system_initializer = {
-	name = "Iron 4"
+	name = "Material Reworking Hub 4"
 	class = "sc_b"
 	flags = {
 		iron_start_system
@@ -296,7 +311,7 @@ ssb_iron_4_system_initializer = {
 	
 
 	planet = {
-		name = "Iron 4"
+		name = "Energy Relay X60"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -305,6 +320,7 @@ ssb_iron_4_system_initializer = {
 	}
 
 	planet = {
+		name = "Material Hardening Unit 01X"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -312,6 +328,7 @@ ssb_iron_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Material Forging Hub 05R"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -319,6 +336,7 @@ ssb_iron_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Natural Gases Collector E6F"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -328,6 +346,7 @@ ssb_iron_4_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Material Energy Synthetizer 06P1"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -335,6 +354,7 @@ ssb_iron_4_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Atmospheric Recovery Unit 06GT"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -345,7 +365,7 @@ ssb_iron_4_system_initializer = {
 }
 
 ssb_iron_5_system_initializer = {
-	name = "Iron 5"
+	name = "Material Smelting Hub 5"
 	class = "sc_b"
 	flags = {
 		iron_start_system
@@ -354,7 +374,7 @@ ssb_iron_5_system_initializer = {
 	
 
 	planet = {
-		name = "Iron 5"
+		name = "Nidavellir"
 		class = "pc_b_star"
 		orbit_distance = 0
 		orbit_angle = 1
@@ -363,6 +383,7 @@ ssb_iron_5_system_initializer = {
 	}
 
 	planet = {
+		name = "Experimental Heat Energy Collector"
 		class = "pc_molten"
 		orbit_distance = 75
 		orbit_angle = { min = 90 max = 270 }
@@ -370,6 +391,7 @@ ssb_iron_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Heat Energy Forge HE01"
 		class = "pc_machine"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -377,6 +399,7 @@ ssb_iron_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Coolant Miner ZE5"
 		class = "pc_gas_giant"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -386,6 +409,7 @@ ssb_iron_5_system_initializer = {
 		change_orbit = 5
 	}
 	planet = {
+		name = "Cooling Center Q6"
 		class = "pc_frozen"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
@@ -393,6 +417,7 @@ ssb_iron_5_system_initializer = {
 		has_ring = no
 	}
 	planet = {
+		name = "Waste Warehouse 0BC"
 		class = "pc_toxic"
 		orbit_distance = 35
 		orbit_angle = { min = 90 max = 270 }
